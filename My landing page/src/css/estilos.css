@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Jaro;
+    src: url(../fontes/Jaro-Regular-VariableFont_opsz.ttf);
+}
+@font-face {
+    font-family: Sangharia;
+    src: url(../fontes/sangharia/Sangharia\ Demo.ttf);
+}
+
+body {
+    margin: 0; /* Remove margens padrão */
+    width: 100vw;
+    height: auto; /* Permite que o corpo cresça conforme o conteúdo */
+    background-color: #5B7B7C;   
+}
+
+header {
+    font-family: Jaro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre os elementos */
+    padding: 20px; /* Padding responsivo */
+    background-color: #4F676D;
+}
+
+.titulo {
+    font-size: 3vw; /* Tamanho baseado na largura da viewport */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 2px solid white;
+}
+
+.controle {
+    width: 70px; /* Manter largura fixa */
+}
+
+.topicos {
+    font-size: 2.5vw; /* Tamanho baseado na largura da viewport */
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    gap: 10vw; /* Espaço entre tópicos */
+    padding-left: 1vw; /* Reduzir padding */
+}
+
+.url {
+    color: white;
+}
+
+.pagina{
+    margin: 0; /* Remove margens padrão */
+    width: 100vw;
+    height: auto; /* Permite que o corpo cresça conforme o conteúdo */
+    background-color: #5B7B7C;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+    height: 30vw;
+    width: 60vw;
+    background-color: #4F676D;
+    border-color: white;
+    border-radius: 5%;
+    border: solid 2px white;
+    padding-left: 30px;
+}
+
+.eu{
+    width: 20vw;
+    border-radius: 6%;
+}
+
+.texto-eu{
+    font-size: 1.1vw;
+    text-align: justify;
+    padding: 3vw;
+    color: white;
+}
+
+
+/* Consultas de mídia para responsividade adicional */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Mudar para coluna em telas menores */
+        align-items: flex-start; /* Alinhar à esquerda */
+    }
+
+    .titulo {
+        font-size: 5vw; /* Ajustar tamanho para telas menores */
+    }
+
+    .topicos {
+        font-size: 4vw; /* Ajustar tamanho para telas menores */
+        padding-left: 10px; /* Reduzir padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 6vw; /* Ajustar ainda mais para telas pequenas */
+    }
+
+    .topicos {
+        font-size: 5vw; /* Ajustar ainda mais */
+        gap: 10px; /* Ajustar espaço */
+    }
+}
