@@ -23,7 +23,7 @@ body::before {
     width: 100%;
     height: 100%;
     pointer-events: none; /* Não bloqueia interações no conteúdo */
-    background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.2) 100%);
+    background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.3) 100%);
     z-index: 1; /* Garante que o pseudo-elemento está por cima do fundo, mas abaixo do conteúdo */
 }
 
@@ -61,7 +61,7 @@ header {
     font-size: 2.5vw; /* Tamanho baseado na largura da viewport */
     display: flex;
     flex-wrap: wrap; /* Permitir quebra de linha */
-    gap: 10vw; /* Espaço entre tópicos */
+    gap: 15vw; /* Espaço entre tópicos */
     padding-left: 1vw; /* Reduzir padding */
 }
 
